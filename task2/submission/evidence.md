@@ -1,4 +1,4 @@
- Task 2 Evidence: Hardware Validation
+# Task 2 Evidence: Hardware Validation
 
 ## UART Heartbeat Log
 The following terminal output confirms that the RISC-V core is executing the firmware correctly and maintaining a stable UART connection at 115200 baud.
