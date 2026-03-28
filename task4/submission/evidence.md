@@ -1,25 +1,43 @@
-# Evidence of Completion - Project-6
+# Evidence of Completion - Project-6 (LED Pattern Sequencer)
+**Student Name:** Varun Raj  
+**Roll Number:** SC23B152  
+**Device:** VSDSquadron Mini (CH32V003)
 
-## 1. UART Terminal Interaction
-The following log demonstrates the successful loading of a pattern, sequence initialization, and the stopping of the sequencer.
+---
 
-**Test Sequence:**
-1.  **Command:** `load 1010`
-2.  **Response:** `Pattern Loaded: 1010`
-3.  **Command:** `play`
-4.  **Response:** `Sequence Started...`
-5.  **Command:** `stop`
-6.  **Response:** `Sequence Stopped.`
+## 📽️ 1. Hardware Demonstration Video
+**[Link to Video Demo (YouTube/Google Drive)]** *(The video shows the RESET handshake, pattern loading, and synchronized LED blinking.)*
 
-> [!IMPORTANT]
-> **Insert your PuTTY screenshot here showing the interaction above.**
+---
 
-## 2. Hardware Verification
-* **Target Pin:** PD0 (Onboard LED).
-* **Observation:** Upon sending the `play` command, the onboard LED blinked in the specific `1010` pattern.
-* **Timing:** The sequence utilized TIM2 interrupts, resulting in a consistent 500ms pulse width per bit.
+## 📸 2. UART Terminal Interaction (PuTTY Logs)
+This screenshot verifies the **115200 baud UART Driver** and the **Command Parser** logic.
 
-## 3. Verification Notes
-* **Buffer Limit:** Verified that patterns up to 64 bits are handled correctly.
-* **Command Robustness:** The system ignores unknown commands and prompts the user with the correct syntax.
-* **Concurrency:** The UART remains responsive even while the Timer is driving the LED sequence in the background.
+> **[INSERT_PUTTY_SCREENSHOT_HERE]** > *Proof of interaction showing `load`, `play`, and `stop` commands with their respective feedback.*
+
+---
+
+## 📸 3. Project Structure & Organization
+This screenshot proves compliance with the **Task-4** folder structure and the separation of drivers (`lib/`) from application logic (`app/`).
+
+> **[INSERT_VSCODE_EXPLORER_SCREENSHOT_HERE]** > *Proof that main.c is in the root and drivers are properly isolated in the /lib folder.*
+
+---
+
+## 📸 4. Hardware Setup Photo
+A clear view of the **VSDSquadron Mini** and the **WCH-LinkE** connection used for debugging.
+
+> **[INSERT_HARDWARE_PHOTO_HERE]** > *Showing the board powered and the onboard LED (PD0) in an active state.*
+
+---
+
+## 🛠️ 5. Technical Verification
+
+### Test Case: TIM2 Interrupt Precision
+* **Configuration:** 48MHz Clock / 500 Prescaler / 48000 Period.
+* **Result:** A deterministic 500ms delay between sequence steps.
+* **Verification:** Verified by timing the bit transitions against a stopwatch in the demo video.
+
+### Test Case: Command Parsing
+* **Input:** `load 10101100`
+* **Result:** The sequencer successfully stored the 8-bit string into the `pattern_buffer` and reset the `current_index`.
