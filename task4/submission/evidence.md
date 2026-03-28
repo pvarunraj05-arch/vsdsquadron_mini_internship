@@ -6,7 +6,7 @@
 ---
 
 ## 📽️ 1. Hardware Demonstration Video
-**[Link to Video Demo (YouTube/Google Drive)]** *(The video shows the RESET handshake, pattern loading, and synchronized LED blinking.)*
+**[[Link to Video Demo (YouTube/Google Drive)](https://drive.google.com/file/d/1VMe5HvENXC5zY4u2LEpgyvrt9xXtelfK/view?usp=drivesdk)]** *(The video shows the RESET handshake, pattern loading, and synchronized LED blinking.)*
 
 ---
 
