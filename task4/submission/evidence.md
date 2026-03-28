@@ -6,28 +6,28 @@
 ---
 
 ## 📽️ 1. Hardware Demonstration Video
-**[[Link to Video Demo (YouTube/Google Drive)](https://drive.google.com/file/d/1VMe5HvENXC5zY4u2LEpgyvrt9xXtelfK/view?usp=drivesdk)]** *(The video shows the RESET handshake, pattern loading, and synchronized LED blinking.)*
+**[Link to Video Demo (YouTube/Google Drive)]** *(The video shows the RESET handshake, pattern loading, and synchronized LED blinking.)*
 
 ---
 
 ## 📸 2. UART Terminal Interaction (PuTTY Logs)
 This screenshot verifies the **115200 baud UART Driver** and the **Command Parser** logic.
 
-> **["C:\Users\varun\Pictures\Screenshots\Screenshot 2026-03-29 024142.png"]** > *Proof of interaction showing `load`, `play`, and `stop` commands with their respective feedback.*
+> **[INSERT_PUTTY_SCREENSHOT_HERE]** > *Proof of interaction showing `load`, `play`, and `stop` commands with their respective feedback.*
 
 ---
 
 ## 📸 3. Project Structure & Organization
 This screenshot proves compliance with the **Task-4** folder structure and the separation of drivers (`lib/`) from application logic (`app/`).
 
-> **["C:\Users\varun\Pictures\Screenshots\Screenshot 2026-03-29 023510.png"]** > *Proof that main.c is in the root and drivers are properly isolated in the /lib folder.*
+> **[INSERT_VSCODE_EXPLORER_SCREENSHOT_HERE]**![alt text](<assets/Screenshot 2026-03-29 024142.png>) > *Proof that main.c is in the root and drivers are properly isolated in the /lib folder.*
 
 ---
 
 ## 📸 4. Hardware Setup Photo
 A clear view of the **VSDSquadron Mini** and the **WCH-LinkE** connection used for debugging.
 
-> **[![alt text](<WhatsApp Image 2026-03-29 at 02.32.00.jpeg>)]** > *Showing the board powered and the onboard LED (PD0) in an active state.*
+> **[INSERT_HARDWARE_PHOTO_HERE]**![alt text](<assets/WhatsApp Image 2026-03-29 at 02.32.00.jpeg>) > *Showing the board powered and the onboard LED (PD0) in an active state.*
 
 ---
 
