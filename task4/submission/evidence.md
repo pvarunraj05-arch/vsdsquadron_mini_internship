@@ -13,14 +13,14 @@
 ## 📸 2. UART Terminal Interaction (PuTTY Logs)
 This screenshot verifies the **115200 baud UART Driver** and the **Command Parser** logic.
 
-> **[INSERT_PUTTY_SCREENSHOT_HERE]** > *Proof of interaction showing `load`, `play`, and `stop` commands with their respective feedback.*
+> **[INSERT_PUTTY_SCREENSHOT_HERE]**![alt text](<assets/Screenshot 2026-03-29 024142.png>) > *Proof of interaction showing `load`, `play`, and `stop` commands with their respective feedback.*
 
 ---
 
 ## 📸 3. Project Structure & Organization
 This screenshot proves compliance with the **Task-4** folder structure and the separation of drivers (`lib/`) from application logic (`app/`).
 
-> **[INSERT_VSCODE_EXPLORER_SCREENSHOT_HERE]**![alt text](<assets/Screenshot 2026-03-29 024142.png>) > *Proof that main.c is in the root and drivers are properly isolated in the /lib folder.*
+> **[INSERT_VSCODE_EXPLORER_SCREENSHOT_HERE]** ![alt text](<assets/Screenshot 2026-03-29 023510.png>)> *Proof that main.c is in the root and drivers are properly isolated in the /lib folder.*
 
 ---
 
